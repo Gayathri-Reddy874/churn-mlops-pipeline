@@ -1,51 +1,28 @@
-📊 Telco Churn Prediction – End-to-End MLOps Pipeline
 📌 Project Overview
 
-This project demonstrates a complete End-to-End MLOps pipeline for Telco Customer Churn Prediction.
+This project implements an end-to-end Customer Churn Prediction MLOps Pipeline.
 
-The system automatically:
-
-Ingests raw telecom customer data
-
-Performs preprocessing & feature engineering
-
-Trains a machine learning model
-
-Tracks experiments using MLflow
-
-Deploys a Streamlit inference app
-
-Automatically retrains when new production data is pushed
-
-Runs CI/CD using GitHub Actions
-
-This simulates a real-world production ML lifecycle.
+It simulates a real-world ML production lifecycle using automation and CI/CD.
 
 ⚙ Architecture Diagram
 Raw Data (IBM Telco Dataset)
-        │
-        ▼
+        ↓
 Data Ingestion
-        │
-        ▼
+        ↓
 Preprocessing
-        │
-        ▼
+        ↓
 Model Training (RandomForest)
-        │
-        ├── MLflow Logging
-        ├── Model Saved (models/model.pkl)
-        │
-        ▼
+        ↓
+MLflow Logging
+        ↓
+Model Saved (models/model.pkl)
+        ↓
 Streamlit App (Inference UI)
-        │
-        ▼
+        ↓
 Production Data (new_data.csv)
-        │
-        ▼
+        ↓
 GitHub Actions (CI/CD)
-        │
-        ▼
+        ↓
 Automatic Retraining
 🚀 How to Run Locally
 1️⃣ Clone Repository
@@ -61,35 +38,25 @@ python src/train.py
 streamlit run app.py
 🔁 CI/CD Automation
 
-This project includes a GitHub Actions workflow.
+This project uses GitHub Actions.
 
-Trigger Condition
+✅ Trigger Condition
 
 The pipeline automatically runs when:
 
 data/production/new_data.csv
 
-is modified.
+is modified and pushed to GitHub.
 
-Workflow Steps
+📊 Model Accuracy
 
-Install dependencies
+Model: RandomForestClassifier
 
-Run retraining script
+Accuracy: XX%
 
-Update model automatically
+Evaluated using train-test split
 
-This simulates production retraining when new customer data arrives.
-
-📊 Model Performance
-
-Algorithm: Random Forest Classifier
-
-Accuracy: ~79%
-
-Evaluation Metric: Accuracy Score
-
-Experiment Tracking: MLflow
+(Replace XX with your actual accuracy)
 
 🧠 Tech Stack
 
@@ -105,25 +72,4 @@ Streamlit
 
 GitHub Actions
 
-Evidently (Drift Monitoring)
-
-Docker (Optional Containerization)
-
-IBM Telco Churn Dataset
-
-📦 Dataset
-
-IBM Telco Customer Churn Dataset
-Public telecom churn dataset used for binary classification.
-
-💡 Key Highlights
-
-End-to-end ML lifecycle
-
-CI/CD automation
-
-Production simulation
-
-Model retraining pipeline
-
-Deployment-ready structure
+Docker (for Hugging Face deployment)
