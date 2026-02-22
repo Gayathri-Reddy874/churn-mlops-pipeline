@@ -5,19 +5,19 @@ This project demonstrates a complete End-to-End MLOps pipeline for Telco Custome
 
 The system automatically:
 
-✅ Ingests raw telecom customer data
+Ingests raw telecom customer data
 
-✅ Performs preprocessing & feature engineering
+Performs preprocessing & feature engineering
 
-✅ Trains a machine learning model
+Trains a machine learning model
 
-✅ Tracks experiments using MLflow
+Tracks experiments using MLflow
 
-✅ Deploys a Streamlit inference app
+Deploys a Streamlit inference app
 
-✅ Automatically retrains when new production data is pushed
+Automatically retrains when new production data is pushed
 
-✅ Runs CI/CD using GitHub Actions
+Runs CI/CD using GitHub Actions
 
 This simulates a real-world production ML lifecycle.
 
@@ -63,7 +63,7 @@ streamlit run app.py
 
 This project includes a GitHub Actions workflow.
 
-🔄 Trigger Condition
+Trigger Condition
 
 The pipeline automatically runs when:
 
@@ -71,7 +71,7 @@ data/production/new_data.csv
 
 is modified.
 
-⚙ Workflow Steps
+Workflow Steps
 
 Install dependencies
 
@@ -114,17 +114,16 @@ IBM Telco Churn Dataset
 📦 Dataset
 
 IBM Telco Customer Churn Dataset
-
-Public telecom churn dataset used for binary classification problems.
+Public telecom churn dataset used for binary classification.
 
 💡 Key Highlights
 
-✔ End-to-end ML lifecycle
+End-to-end ML lifecycle
 
-✔ CI/CD automation
+CI/CD automation
 
-✔ Production simulation
+Production simulation
 
-✔ Model retraining pipeline
+Model retraining pipeline
 
-✔ Deployment-ready structure
+Deployment-ready structure
