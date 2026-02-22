@@ -17,4 +17,6 @@ jobs:
           python-version: 3.9
 
       - run: pip install -r requirements.txt
-      - run: python src/retrain.py
+      - run: |
+         export PYTHONPATH=$PYTHONPATH:$(pwd)
+         python src/retrain.py
