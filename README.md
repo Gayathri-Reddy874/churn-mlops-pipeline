@@ -5,19 +5,19 @@ This project demonstrates a complete End-to-End MLOps pipeline for Telco Custome
 
 The system automatically:
 
-Ingests raw telecom customer data
+✅ Ingests raw telecom customer data
 
-Performs preprocessing & feature engineering
+✅ Performs preprocessing & feature engineering
 
-Trains a machine learning model
+✅ Trains a machine learning model
 
-Tracks experiments using MLflow
+✅ Tracks experiments using MLflow
 
-Deploys a Streamlit inference app
+✅ Deploys a Streamlit inference app
 
-Automatically retrains when new production data is pushed
+✅ Automatically retrains when new production data is pushed
 
-Runs CI/CD using GitHub Actions
+✅ Runs CI/CD using GitHub Actions
 
 This simulates a real-world production ML lifecycle.
 
@@ -53,7 +53,7 @@ git clone https://github.com/YOUR_USERNAME/churn-mlops-pipeline.git
 cd churn-mlops-pipeline
 2️⃣ Install Dependencies
 pip install -r requirements.txt
-3️⃣ Run Pipeline
+3️⃣ Run Training Pipeline
 python src/data_ingestion.py
 python src/preprocessing.py
 python src/train.py
@@ -61,15 +61,17 @@ python src/train.py
 streamlit run app.py
 🔁 CI/CD Automation
 
-GitHub Actions workflow:
+This project includes a GitHub Actions workflow.
 
-Triggered when:
+🔄 Trigger Condition
+
+The pipeline automatically runs when:
 
 data/production/new_data.csv
 
 is modified.
 
-Steps:
+⚙ Workflow Steps
 
 Install dependencies
 
@@ -85,9 +87,9 @@ Algorithm: Random Forest Classifier
 
 Accuracy: ~79%
 
-Evaluation metric: Accuracy score
+Evaluation Metric: Accuracy Score
 
-Model tracked using MLflow.
+Experiment Tracking: MLflow
 
 🧠 Tech Stack
 
@@ -103,21 +105,26 @@ Streamlit
 
 GitHub Actions
 
-Evidently (for drift monitoring)
+Evidently (Drift Monitoring)
 
-Docker (optional containerization)
+Docker (Optional Containerization)
 
 IBM Telco Churn Dataset
 
 📦 Dataset
 
 IBM Telco Customer Churn Dataset
-Public telecom churn dataset used for binary classification.
+
+Public telecom churn dataset used for binary classification problems.
 
 💡 Key Highlights
 
 ✔ End-to-end ML lifecycle
+
 ✔ CI/CD automation
+
 ✔ Production simulation
+
 ✔ Model retraining pipeline
+
 ✔ Deployment-ready structure
